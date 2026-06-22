@@ -2,7 +2,6 @@
 
 > **Build professional resumes in minutes.** — A free, feature-rich Resume Builder built with React + Vite, supporting 3 templates, live preview, PDF export, and LocalStorage persistence.
 
-![Resume Builder Banner](screenshots/banner.png)
 
 ---
 
@@ -32,16 +31,6 @@
 
 ---
 
-## 🖼️ Screenshots
-
-> _(Add screenshots here after deployment)_
-
-| Modern Template | Minimal Template | Professional Template |
-|---|---|---|
-| ![Modern](screenshots/modern.png) | ![Minimal](screenshots/minimal.png) | ![Professional](screenshots/professional.png) |
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -53,7 +42,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/resume-builder.git
+git clone https://github.com/AnjushreeJ/resume-builder.git
 cd resume-builder
 
 # Install dependencies
@@ -75,36 +64,6 @@ npm run build
 ```
 
 The output will be in the `dist/` directory.
-
----
-
-## 🌐 Deployment on Vercel
-
-### Option 1: Via Vercel CLI
-
-```bash
-# Install Vercel CLI
-npm install -g vercel
-
-# Deploy
-vercel
-
-# Follow the prompts:
-# - Link to existing project? No
-# - Project name: resume-builder
-# - Directory: ./
-# - Override build settings? No
-```
-
-### Option 2: Via GitHub + Vercel Dashboard
-
-1. Push this repository to GitHub
-2. Go to [vercel.com](https://vercel.com) and sign in
-3. Click **"New Project"** → Import your GitHub repository
-4. Vercel auto-detects Vite — click **Deploy**
-5. Your app will be live at `https://resume-builder-xxx.vercel.app`
-
-**Environment Variables:** None required — the app is entirely frontend.
 
 ---
 
@@ -169,16 +128,6 @@ resume-builder/
 | **LocalStorage** | Client-side persistence |
 
 **No backend. No database. No paid services.**
-
----
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'feat: add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
 
 ---
 
