@@ -2,6 +2,8 @@
 
 > **Build professional resumes in minutes.** — A free, feature-rich Resume Builder built with React + Vite, supporting 3 templates, live preview, PDF export, and LocalStorage persistence.
 
+Live Tool URL:
+https://resume-builder-delta-ten-30.vercel.app/
 
 ---
 
