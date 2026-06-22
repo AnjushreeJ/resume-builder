@@ -1,0 +1,696 @@
+/* ============================================================
+   Resume Templates CSS
+   Three distinct professional designs:
+   1. Modern   - Bold blue sidebar, contemporary layout
+   2. Minimal  - Clean white, typographic elegance
+   3. Professional - Classic two-column, formal
+   ============================================================ */
+
+/* ─── Shared Resume Base ───────────────────────────────────────── */
+.resume-page {
+  width: 210mm; /* A4 width */
+  min-height: 297mm; /* A4 height */
+  background: white;
+  position: relative;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  overflow: hidden;
+  color: #1e293b;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ─── TEMPLATE 1: MODERN ───────────────────────────────────────── */
+.resume-modern {
+  display: flex;
+  min-height: 297mm;
+}
+
+.resume-modern .resume-sidebar {
+  width: 72mm;
+  background: linear-gradient(160deg, #1e40af 0%, #1d4ed8 40%, #2563eb 100%);
+  color: white;
+  padding: 28px 20px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.resume-modern .resume-main {
+  flex: 1;
+  padding: 28px 24px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* Modern - Sidebar Photo */
+.resume-modern .photo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.resume-modern .profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.resume-modern .photo-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  border: 3px solid rgba(255,255,255,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: rgba(255,255,255,0.8);
+}
+
+/* Modern - Name block */
+.resume-modern .name-block {
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.resume-modern .full-name {
+  font-size: 17px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+  margin-bottom: 2px;
+}
+
+/* Modern - Contact in sidebar */
+.resume-modern .sidebar-section {
+  margin-bottom: 18px;
+}
+
+.resume-modern .sidebar-section-title {
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.resume-modern .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 9.5px;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.4;
+  word-break: break-all;
+}
+
+.resume-modern .contact-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.15);
+  border-radius: 3px;
+  font-size: 9px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Modern - Skill bars */
+.resume-modern .skill-item {
+  margin-bottom: 8px;
+}
+
+.resume-modern .skill-name {
+  font-size: 9.5px;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.resume-modern .skill-bar {
+  height: 4px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.resume-modern .skill-fill {
+  height: 100%;
+  background: rgba(255,255,255,0.8);
+  border-radius: 2px;
+}
+
+/* Modern - Language dots */
+.resume-modern .lang-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 9.5px;
+  color: rgba(255,255,255,0.9);
+}
+
+.resume-modern .lang-dots {
+  display: flex;
+  gap: 3px;
+}
+
+.resume-modern .lang-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+}
+
+.resume-modern .lang-dot.filled {
+  background: rgba(255,255,255,0.9);
+}
+
+/* Modern - Main content sections */
+.resume-modern .section {
+  margin-bottom: 18px;
+}
+
+.resume-modern .section-heading {
+  font-size: 12px;
+  font-weight: 800;
+  color: #1e40af;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #2563eb;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.resume-modern .summary-text {
+  font-size: 9.5px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Modern - Experience/Education entries */
+.resume-modern .entry {
+  margin-bottom: 14px;
+  padding-left: 12px;
+  border-left: 2px solid #e2e8f0;
+  position: relative;
+}
+
+.resume-modern .entry::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 2px solid white;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.resume-modern .entry-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2px;
+}
+
+.resume-modern .entry-subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 2px;
+}
+
+.resume-modern .entry-meta {
+  font-size: 9px;
+  color: #64748b;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.resume-modern .entry-description {
+  font-size: 9.5px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Modern - Tags */
+.resume-modern .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.resume-modern .tech-tag {
+  padding: 2px 7px;
+  background: #eff6ff;
+  color: #2563eb;
+  border-radius: 3px;
+  font-size: 8.5px;
+  font-weight: 600;
+  border: 1px solid #bfdbfe;
+}
+
+/* Modern - Certifications, Achievements */
+.resume-modern .simple-item {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  background: #f8fafc;
+  border-radius: 5px;
+  border-left: 3px solid #2563eb;
+}
+
+.resume-modern .simple-item-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.resume-modern .simple-item-sub {
+  font-size: 9px;
+  color: #64748b;
+}
+
+/* ─── TEMPLATE 2: MINIMAL ───────────────────────────────────────── */
+.resume-minimal {
+  background: white;
+  padding: 36px 42px;
+  min-height: 297mm;
+}
+
+.resume-minimal .header-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1.5px solid #e2e8f0;
+}
+
+.resume-minimal .header-left {
+  flex: 1;
+}
+
+.resume-minimal .profile-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.resume-minimal .photo-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #94a3b8;
+  margin-left: 20px;
+  flex-shrink: 0;
+  border: 1px solid #e2e8f0;
+}
+
+.resume-minimal .full-name {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.resume-minimal .contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 9px;
+  color: #64748b;
+}
+
+.resume-minimal .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.resume-minimal .section {
+  margin-bottom: 18px;
+}
+
+.resume-minimal .section-heading {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resume-minimal .section-heading::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #e2e8f0;
+}
+
+.resume-minimal .summary-text {
+  font-size: 9.5px;
+  color: #374151;
+  line-height: 1.65;
+}
+
+.resume-minimal .entry {
+  margin-bottom: 14px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto auto;
+  gap: 2px 12px;
+}
+
+.resume-minimal .entry-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0f172a;
+  grid-column: 1;
+}
+
+.resume-minimal .entry-date {
+  font-size: 9px;
+  color: #64748b;
+  grid-column: 2;
+  grid-row: 1;
+  white-space: nowrap;
+  text-align: right;
+  padding-top: 1px;
+}
+
+.resume-minimal .entry-subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  color: #475569;
+  grid-column: 1;
+}
+
+.resume-minimal .entry-description {
+  font-size: 9.5px;
+  color: #374151;
+  line-height: 1.55;
+  grid-column: 1 / -1;
+  margin-top: 4px;
+}
+
+/* Minimal skills - simple tags */
+.resume-minimal .skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.resume-minimal .skill-tag {
+  padding: 3px 10px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 3px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.resume-minimal .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.resume-minimal .tech-tag {
+  padding: 1px 7px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 8.5px;
+  border-radius: 3px;
+}
+
+.resume-minimal .two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+
+/* ─── TEMPLATE 3: PROFESSIONAL ─────────────────────────────────── */
+.resume-professional {
+  background: white;
+  min-height: 297mm;
+}
+
+.resume-professional .pro-header {
+  background: #0f172a;
+  color: white;
+  padding: 24px 36px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.resume-professional .profile-photo {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.3);
+  flex-shrink: 0;
+}
+
+.resume-professional .photo-placeholder {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: rgba(255,255,255,0.7);
+  border: 2px solid rgba(255,255,255,0.2);
+  flex-shrink: 0;
+}
+
+.resume-professional .pro-header-info {
+  flex: 1;
+}
+
+.resume-professional .full-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+
+.resume-professional .contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 9px;
+  color: rgba(255,255,255,0.75);
+}
+
+.resume-professional .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.resume-professional .pro-body {
+  display: grid;
+  grid-template-columns: 1fr 68mm;
+  min-height: calc(297mm - 124px);
+}
+
+.resume-professional .pro-main {
+  padding: 22px 24px 22px 36px;
+  border-right: 1px solid #e2e8f0;
+}
+
+.resume-professional .pro-aside {
+  padding: 22px 20px;
+  background: #f8fafc;
+}
+
+.resume-professional .section {
+  margin-bottom: 20px;
+}
+
+.resume-professional .section-heading {
+  font-size: 11px;
+  font-weight: 800;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  padding: 4px 0;
+  border-bottom: 2px solid #0f172a;
+}
+
+.resume-professional .aside-heading {
+  font-size: 10px;
+  font-weight: 800;
+  color: #1e40af;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #bfdbfe;
+}
+
+.resume-professional .summary-text {
+  font-size: 9.5px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.resume-professional .entry {
+  margin-bottom: 14px;
+}
+
+.resume-professional .entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2px;
+}
+
+.resume-professional .entry-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.resume-professional .entry-date {
+  font-size: 9px;
+  color: #64748b;
+  white-space: nowrap;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+
+.resume-professional .entry-subtitle {
+  font-size: 10px;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+.resume-professional .entry-description {
+  font-size: 9.5px;
+  color: #374151;
+  line-height: 1.55;
+}
+
+.resume-professional .tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 5px;
+}
+
+.resume-professional .tech-tag {
+  padding: 1.5px 6px;
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 8px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+/* Professional - Aside elements */
+.resume-professional .skill-item {
+  margin-bottom: 7px;
+}
+
+.resume-professional .skill-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9.5px;
+  color: #374151;
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.resume-professional .skill-bar {
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.resume-professional .skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
+  border-radius: 2px;
+}
+
+.resume-professional .aside-item {
+  font-size: 9.5px;
+  color: #374151;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  border-left: 2px solid #bfdbfe;
+  line-height: 1.4;
+}
+
+.resume-professional .aside-item-title {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.resume-professional .aside-item-sub {
+  font-size: 8.5px;
+  color: #64748b;
+}
+
+.resume-professional .lang-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 9.5px;
+}
+
+.resume-professional .lang-level {
+  font-size: 8.5px;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 600;
+}
